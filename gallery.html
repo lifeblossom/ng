@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Life Blossom Care and Cure Hospital</title>
+  <meta name="description" content="View our hospital gallery — facilities, staff and the environment at Life Blossom Care and Cure Hospital, Lagos." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <a href="tel:+2349058038476"><i class="fas fa-phone"></i> +234 905 803 8476</a>
+        <a href="mailto:lifeblossomcarencurehospital@gmail.com"><i class="fas fa-envelope"></i> lifeblossomcarencurehospital@gmail.com</a>
+      </div>
+      <div class="top-bar-right">
+        <span><i class="fas fa-clock"></i> Mon–Sat: 7am – 9pm &nbsp;|&nbsp; Emergency: 24/7</span>
+        <a href="https://wa.me/2349058038476" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="mainHeader">
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Life Blossom Hospital Logo" />
+          <div class="logo-text">
+            <strong>Life Blossom</strong>
+            <span>Care &amp; Cure Hospital</span>
+          </div>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="index.html#services">Services</a>
+          <a href="gallery.html" class="active">Gallery</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="appointment.html" class="btn btn-primary nav-cta">Book Appointment</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span style="color:white;">Gallery</span>
+        </div>
+        <h1>Our Gallery</h1>
+        <p>A glimpse into our world-class facilities, compassionate team, and welcoming environment</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Filter Tabs -->
+  <section style="padding:40px 0 20px;">
+    <div class="container">
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;" id="galleryFilters">
+        <button class="gallery-filter-btn active" data-filter="all">All Photos</button>
+        <button class="gallery-filter-btn" data-filter="building">Building</button>
+        <button class="gallery-filter-btn" data-filter="interior">Interior</button>
+        <button class="gallery-filter-btn" data-filter="team">Our Team</button>
+        <button class="gallery-filter-btn" data-filter="services">Services</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Gallery Grid -->
+  <section class="gallery-full">
+    <div class="container">
+      <div class="gallery-masonry" id="galleryGrid">
+
+        <div class="gallery-full-item animate-on-scroll" data-category="building">
+          <img src="images/front view.jpg" alt="Hospital Front View" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <span>Hospital Building</span>
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+
+        <div class="gallery-full-item animate-on-scroll" data-category="interior">
+          <img src="images/inside 1.webp" alt="Hospital Ward Interior" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <span>Ward Interior</span>
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+
+        <div class="gallery-full-item animate-on-scroll" data-category="interior">
+          <img src="images/inside 2.webp" alt="Hospital Interior 2" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <span>Patient Lounge</span>
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+
+        <div class="gallery-full-item animate-on-scroll" data-category="interior">
+          <img src="images/inside 3.webp" alt="Hospital Interior 3" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <span>Consultation Area</span>
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+
+        <div class="gallery-full-item animate-on-scroll" data-category="team">
+          <img src="images/doctors-team.jpg" alt="Our Medical Team" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <span>Our Medical Team</span>
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+
+        <div class="gallery-full-item animate-on-scroll" data-category="services">
+          <img src="images/cardiology.jpg" alt="Cardiology Department" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <span>Cardiology Unit</span>
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+
+        <div class="gallery-full-item animate-on-scroll" data-category="services">
+          <img src="images/maternity.jpg" alt="Maternity Ward" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <span>Maternity Ward</span>
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+
+        <div class="gallery-full-item animate-on-scroll" data-category="services">
+          <img src="images/surgery.jpg" alt="Surgery Theatre" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <span>Surgery Theatre</span>
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+
+        <div class="gallery-full-item animate-on-scroll" data-category="services">
+          <img src="images/pediatrics.jpg" alt="Pediatrics Ward" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <span>Pediatrics Ward</span>
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+
+        <div class="gallery-full-item animate-on-scroll" data-category="services">
+          <img src="images/emergency.jpg" alt="Emergency Department" loading="lazy" />
+          <div class="gallery-full-overlay">
+            <span>Emergency Department</span>
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <h2>Hospital Video Tour</h2>
+        <p>Take a virtual walkthrough of our world-class facilities</p>
+        <div class="underline"></div>
+      </div>
+      <div style="max-width:900px;margin:0 auto;" class="animate-on-scroll">
+        <div class="video-placeholder" id="videoContainer">
+          <!-- 
+            TO ADD VIDEO: Replace this placeholder div with a <video> tag or embed your video.
+            Example using a video file:
+              <video controls poster="images/front view.jpg" style="width:100%;border-radius:16px;">
+                <source src="videos/hospital-tour.mp4" type="video/mp4" />
+              </video>
+            Example using YouTube embed:
+              <iframe width="100%" height="500" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                frameborder="0" allowfullscreen style="border-radius:16px;"></iframe>
+          -->
+          <i class="fas fa-play-circle"></i>
+          <h3>Video Coming Soon</h3>
+          <p>Our hospital tour video will be uploaded here shortly. In the meantime, explore our photo gallery above to see our facilities.</p>
+          <a href="appointment.html" class="btn btn-white" style="margin-top:.5rem;">
+            <i class="fas fa-calendar-check"></i> Book a Visit Instead
+          </a>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:1.5rem;font-size:.875rem;color:var(--mid-gray);">
+        <i class="fas fa-info-circle" style="color:var(--primary);margin-right:.4rem;"></i>
+        Video will be available once uploaded by the hospital administrator.
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="appointment-cta">
+    <div class="container">
+      <div class="cta-box animate-on-scroll">
+        <div>
+          <h2>Impressed by What You See?</h2>
+          <p>Experience our world-class care first-hand. Book an appointment with us today.</p>
+        </div>
+        <div class="cta-btns">
+          <a href="appointment.html" class="btn btn-white">
+            <i class="fas fa-calendar-check"></i> Book Appointment
+          </a>
+          <a href="https://wa.me/2349058038476" target="_blank" rel="noopener" class="btn btn-outline">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Life Blossom Hospital Logo" />
+            <div class="footer-logo-text">
+              <strong>Life Blossom</strong>
+              <span>Care &amp; Cure Hospital</span>
+            </div>
+          </div>
+          <p>Dedicated to delivering compassionate, high-quality healthcare to the communities of Lagos.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/2349058038476" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="index.html#services">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="appointment.html">Book Appointment</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Our Specialties</h5>
+          <div class="footer-links">
+            <a href="#">Emergency Care</a>
+            <a href="#">Cardiology</a>
+            <a href="#">Neurology</a>
+            <a href="#">Orthopaedics</a>
+            <a href="#">Maternity Care</a>
+            <a href="#">Pediatrics</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>20 Fatade Road, Baruwa, Ipaja, Lagos 100275</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+234 905 803 8476</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-clock"></i>
+            <span>Mon–Sat: 7am–9pm<br/>Emergency: 24/7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Life Blossom Care and Cure Hospital. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+    <img src="" alt="" id="lightboxImg" />
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+    <a href="https://wa.me/2349058038476" class="floating-action fab-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="fab-label">Chat on WhatsApp</span>
+    </a>
+    <a href="tel:+2349058038476" class="floating-action fab-call" aria-label="Call us">
+      <i class="fas fa-phone"></i>
+      <span class="fab-label">Call Us</span>
+    </a>
+  </div>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Gallery Filter
+    const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-full-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Lightbox
+    const lightbox   = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+
+    let currentIndex = 0;
+    let visibleImages = [];
+
+    function updateVisibleImages() {
+      visibleImages = Array.from(document.querySelectorAll('.gallery-full-item:not([style*="display: none"]) img'));
+    }
+
+    galleryItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        updateVisibleImages();
+        const img = item.querySelector('img');
+        currentIndex = visibleImages.indexOf(img);
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    lightboxNext.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % visibleImages.length;
+      lightboxImg.src = visibleImages[currentIndex].src;
+      lightboxImg.alt = visibleImages[currentIndex].alt;
+    });
+
+    lightboxPrev.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + visibleImages.length) % visibleImages.length;
+      lightboxImg.src = visibleImages[currentIndex].src;
+      lightboxImg.alt = visibleImages[currentIndex].alt;
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') lightboxNext.click();
+      if (e.key === 'ArrowLeft') lightboxPrev.click();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appointment | Life Blossom Care and Cure Hospital</title>
+  <meta name="description" content="Book an appointment at Life Blossom Care and Cure Hospital. Fill the form and we will confirm via WhatsApp." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <a href="tel:+2349058038476"><i class="fas fa-phone"></i> +234 905 803 8476</a>
+        <a href="mailto:lifeblossomcarencurehospital@gmail.com"><i class="fas fa-envelope"></i> lifeblossomcarencurehospital@gmail.com</a>
+      </div>
+      <div class="top-bar-right">
+        <span><i class="fas fa-clock"></i> Mon–Sat: 7am – 9pm &nbsp;|&nbsp; Emergency: 24/7</span>
+        <a href="https://wa.me/2349058038476" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="mainHeader">
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Life Blossom Hospital Logo" />
+          <div class="logo-text">
+            <strong>Life Blossom</strong>
+            <span>Care &amp; Cure Hospital</span>
+          </div>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="index.html#services">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="appointment.html" class="btn btn-primary nav-cta active">Book Appointment</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span style="color:white;">Book Appointment</span>
+        </div>
+        <h1>Book an Appointment</h1>
+        <p>Fill in your details below and we'll confirm your appointment via WhatsApp</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Form -->
+  <section class="appointment-page">
+    <div class="container">
+      <div class="appt-grid">
+        <!-- Form -->
+        <div class="appt-form-card animate-on-scroll">
+          <h2>Patient Appointment Form</h2>
+          <p>Please fill in all required fields marked with <span style="color:#e53e3e;">*</span>. After clicking Send, you will be directed to WhatsApp to confirm your booking.</p>
+
+          <form id="appointmentForm" novalidate>
+            <!-- Personal Info -->
+            <h4 style="color:var(--primary-dark);margin-bottom:1.25rem;padding-bottom:.5rem;border-bottom:2px solid var(--light-gray);">
+              <i class="fas fa-user" style="margin-right:.5rem;color:var(--primary);"></i>Personal Information
+            </h4>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name <span>*</span></label>
+                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Enter first name" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name <span>*</span></label>
+                <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Enter last name" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number <span>*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="e.g. 08012345678" required />
+              </div>
+              <div class="form-group">
+                <label for="age">Age <span>*</span></label>
+                <input type="number" id="age" name="age" class="form-control" placeholder="Your age" min="0" max="130" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="gender">Gender <span>*</span></label>
+                <select id="gender" name="gender" class="form-control" required>
+                  <option value="">Select gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+                  <option>Prefer not to say</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Optional email address" />
+              </div>
+            </div>
+
+            <!-- Appointment Details -->
+            <h4 style="color:var(--primary-dark);margin:1.5rem 0 1.25rem;padding-bottom:.5rem;border-bottom:2px solid var(--light-gray);">
+              <i class="fas fa-calendar-alt" style="margin-right:.5rem;color:var(--primary);"></i>Appointment Details
+            </h4>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="department">Department / Service <span>*</span></label>
+                <select id="department" name="department" class="form-control" required>
+                  <option value="">Select department</option>
+                  <option>General Medicine</option>
+                  <option>Emergency Care</option>
+                  <option>Cardiology</option>
+                  <option>Neurology</option>
+                  <option>Orthopaedics</option>
+                  <option>Surgery</option>
+                  <option>Maternity Care</option>
+                  <option>Pediatrics</option>
+                  <option>Diagnostics / Laboratory</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="preferredDate">Preferred Date <span>*</span></label>
+                <input type="date" id="preferredDate" name="preferredDate" class="form-control" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="preferredTime">Preferred Time <span>*</span></label>
+                <select id="preferredTime" name="preferredTime" class="form-control" required>
+                  <option value="">Select time slot</option>
+                  <option>7:00 AM – 9:00 AM</option>
+                  <option>9:00 AM – 11:00 AM</option>
+                  <option>11:00 AM – 1:00 PM</option>
+                  <option>1:00 PM – 3:00 PM</option>
+                  <option>3:00 PM – 5:00 PM</option>
+                  <option>5:00 PM – 7:00 PM</option>
+                  <option>7:00 PM – 9:00 PM</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="patientType">Patient Type <span>*</span></label>
+                <select id="patientType" name="patientType" class="form-control" required>
+                  <option value="">Select type</option>
+                  <option>New Patient</option>
+                  <option>Returning Patient</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Symptoms / Additional Info -->
+            <div class="form-group">
+              <label for="symptoms">Symptoms / Reason for Visit <span>*</span></label>
+              <textarea id="symptoms" name="symptoms" class="form-control" placeholder="Please briefly describe your symptoms or reason for the appointment…" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="additionalInfo">Additional Information</label>
+              <textarea id="additionalInfo" name="additionalInfo" class="form-control" placeholder="Any allergies, current medications, or other relevant details…" style="min-height:80px;"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn-submit">
+              <i class="fab fa-whatsapp" style="font-size:1.2rem;"></i>
+              Send via WhatsApp
+            </button>
+            <div class="whatsapp-note">
+              <i class="fab fa-whatsapp"></i>
+              <span>Clicking Send will open a WhatsApp chat with your appointment details pre-filled.</span>
+            </div>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="appt-sidebar animate-on-scroll">
+          <div class="sidebar-card">
+            <h4><i class="fas fa-clock" style="color:var(--primary);margin-right:.5rem;"></i>Working Hours</h4>
+            <div class="sidebar-info-item">
+              <i class="fas fa-sun"></i>
+              <div>
+                <strong>Monday – Saturday</strong>
+                <span>7:00 AM – 9:00 PM</span>
+              </div>
+            </div>
+            <div class="sidebar-info-item">
+              <i class="fas fa-moon"></i>
+              <div>
+                <strong>Sunday</strong>
+                <span>Emergency Services Only</span>
+              </div>
+            </div>
+            <div class="sidebar-info-item">
+              <i class="fas fa-ambulance"></i>
+              <div>
+                <strong>Emergency</strong>
+                <span>24 Hours, 7 Days a Week</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h4><i class="fas fa-stethoscope" style="color:var(--primary);margin-right:.5rem;"></i>Our Departments</h4>
+            <div style="display:flex;flex-direction:column;gap:.5rem;">
+              <div style="display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:var(--text);">
+                <i class="fas fa-check-circle" style="color:var(--accent);font-size:.9rem;"></i> General Medicine
+              </div>
+              <div style="display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:var(--text);">
+                <i class="fas fa-check-circle" style="color:var(--accent);font-size:.9rem;"></i> Emergency Care
+              </div>
+              <div style="display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:var(--text);">
+                <i class="fas fa-check-circle" style="color:var(--accent);font-size:.9rem;"></i> Cardiology
+              </div>
+              <div style="display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:var(--text);">
+                <i class="fas fa-check-circle" style="color:var(--accent);font-size:.9rem;"></i> Neurology
+              </div>
+              <div style="display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:var(--text);">
+                <i class="fas fa-check-circle" style="color:var(--accent);font-size:.9rem;"></i> Orthopaedics
+              </div>
+              <div style="display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:var(--text);">
+                <i class="fas fa-check-circle" style="color:var(--accent);font-size:.9rem;"></i> Surgery
+              </div>
+              <div style="display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:var(--text);">
+                <i class="fas fa-check-circle" style="color:var(--accent);font-size:.9rem;"></i> Maternity Care
+              </div>
+              <div style="display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:var(--text);">
+                <i class="fas fa-check-circle" style="color:var(--accent);font-size:.9rem;"></i> Pediatrics
+              </div>
+              <div style="display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:var(--text);">
+                <i class="fas fa-check-circle" style="color:var(--accent);font-size:.9rem;"></i> Diagnostics
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h4><i class="fas fa-map-marker-alt" style="color:var(--primary);margin-right:.5rem;"></i>Find Us</h4>
+            <div class="sidebar-info-item">
+              <i class="fas fa-location-dot"></i>
+              <div>
+                <strong>Address</strong>
+                <span>20 Fatade Road, Baruwa, Ipaja, Lagos 100275</span>
+              </div>
+            </div>
+            <div class="sidebar-info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Phone / WhatsApp</strong>
+                <span>+234 905 803 8476</span>
+              </div>
+            </div>
+            <a href="https://maps.google.com/?q=20+Fatade+Road+Baruwa+Ipaja+Lagos" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:.5rem;">
+              <i class="fas fa-directions"></i> Get Directions
+            </a>
+          </div>
+
+          <div class="emergency-card">
+            <i class="fas fa-ambulance"></i>
+            <h4>Emergency?</h4>
+            <p>Don't wait — call us immediately for any life-threatening emergency.</p>
+            <a href="tel:+2349058038476" class="emergency-phone">+234 905 803 8476</a>
+            <a href="tel:+2349058038476" class="btn btn-white" style="width:100%;justify-content:center;">
+              <i class="fas fa-phone-alt"></i> Call Emergency
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Life Blossom Hospital Logo" />
+            <div class="footer-logo-text">
+              <strong>Life Blossom</strong>
+              <span>Care &amp; Cure Hospital</span>
+            </div>
+          </div>
+          <p>Dedicated to delivering compassionate, high-quality healthcare to the communities of Lagos.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/2349058038476" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="index.html#services">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="appointment.html">Book Appointment</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Our Specialties</h5>
+          <div class="footer-links">
+            <a href="#">Emergency Care</a>
+            <a href="#">Cardiology</a>
+            <a href="#">Neurology</a>
+            <a href="#">Orthopaedics</a>
+            <a href="#">Maternity Care</a>
+            <a href="#">Pediatrics</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>20 Fatade Road, Baruwa, Ipaja, Lagos 100275</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+234 905 803 8476</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-clock"></i>
+            <span>Mon–Sat: 7am–9pm<br/>Emergency: 24/7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Life Blossom Care and Cure Hospital. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+    <a href="https://wa.me/2349058038476" class="floating-action fab-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="fab-label">Chat on WhatsApp</span>
+    </a>
+    <a href="tel:+2349058038476" class="floating-action fab-call" aria-label="Call us">
+      <i class="fas fa-phone"></i>
+      <span class="fab-label">Call Us</span>
+    </a>
+  </div>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Appointment form → WhatsApp
+    document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const firstName    = document.getElementById('firstName').value.trim();
+      const lastName     = document.getElementById('lastName').value.trim();
+      const phone        = document.getElementById('phone').value.trim();
+      const age          = document.getElementById('age').value.trim();
+      const gender       = document.getElementById('gender').value;
+      const email        = document.getElementById('email').value.trim();
+      const department   = document.getElementById('department').value;
+      const preferredDate= document.getElementById('preferredDate').value;
+      const preferredTime= document.getElementById('preferredTime').value;
+      const patientType  = document.getElementById('patientType').value;
+      const symptoms     = document.getElementById('symptoms').value.trim();
+      const additionalInfo = document.getElementById('additionalInfo').value.trim();
+
+      // Validate required fields
+      if (!firstName || !lastName || !phone || !age || !gender || !department || !preferredDate || !preferredTime || !patientType || !symptoms) {
+        alert('Please fill in all required fields marked with *');
+        return;
+      }
+
+      // Format date nicely
+      const dateObj = new Date(preferredDate);
+      const formattedDate = dateObj.toLocaleDateString('en-NG', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+
+      // Build WhatsApp message
+      let message = `*APPOINTMENT REQUEST*\n`;
+      message += `*Life Blossom Care and Cure Hospital*\n`;
+      message += `━━━━━━━━━━━━━━━━━━━━\n\n`;
+      message += `*👤 Patient Details*\n`;
+      message += `• Name: ${firstName} ${lastName}\n`;
+      message += `• Phone: ${phone}\n`;
+      message += `• Age: ${age} years\n`;
+      message += `• Gender: ${gender}\n`;
+      if (email) message += `• Email: ${email}\n`;
+      message += `\n*📅 Appointment Details*\n`;
+      message += `• Department: ${department}\n`;
+      message += `• Preferred Date: ${formattedDate}\n`;
+      message += `• Preferred Time: ${preferredTime}\n`;
+      message += `• Patient Type: ${patientType}\n`;
+      message += `\n*🩺 Reason for Visit*\n`;
+      message += `${symptoms}\n`;
+      if (additionalInfo) {
+        message += `\n*ℹ️ Additional Info*\n`;
+        message += `${additionalInfo}\n`;
+      }
+      message += `\n━━━━━━━━━━━━━━━━━━━━\n`;
+      message += `_Please confirm my appointment. Thank you._`;
+
+      const whatsappNumber = '2349058038476';
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+      window.open(whatsappURL, '_blank');
+    });
+  </script>
+</body>
+</html>
